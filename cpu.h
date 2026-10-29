@@ -14,7 +14,7 @@ typedef enum {
     REG_SP,
     REG_IR,
     REG_TIR,
-    REG_U,
+    REG_ZERO,
     REG_UM,        
     REG_MENOS_UM,  
     REG_AMASK,     
@@ -91,4 +91,4 @@ int cpu_step(cpu_estado *cpu);
 int cpu_run(cpu_estado *cpu, unsigned long max_passos);
 
 
-#endif CPU_H
+#endif
