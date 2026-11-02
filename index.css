@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 40px;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-items: center;
+}
+
+header h2 {
+    color: white;
+}
+
+/* -------------------------------- */
+
+body {
+    background-color: black;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.montador {
+    height: 360px;
+    width: 270px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+.codigo {
+    height: 300px;
+    width: 270px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+.estatiscas {
+    height: 200px;
+    width: 270px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: rgb(20, 20, 20);
+}
+
+.areas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.registradores {
+    height: 200px;
+    width: 500px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: rgb(20, 20, 20);    
+}
+
+.memoria {
+    height: 200px;
+    width: 500px;
+    border-radius: 16px;
+    border-color: white;
+    background-color: rgb(20, 20, 20);    
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subtitle {
+    color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+}
