@@ -1,6 +1,12 @@
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
 }
 
 header {
@@ -18,12 +24,6 @@ header h2 {
     color: white;
 }
 
-/* -------------------------------- */
-
-body {
-    background-color: black;
-}
-
 .vertical {
     display: flex;
     flex-direction: column;
@@ -35,15 +35,18 @@ body {
     height: 360px;
     width: 270px;
     border-radius: 16px;
-    border-color: white;
+    border: 1px solid white; 
     background-color: rgb(20, 20, 20);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
 .codigo {
     height: 300px;
     width: 270px;
     border-radius: 16px;
-    border-color: white;
+    border: 1px solid white;
     background-color: rgb(20, 20, 20);
 }
 
@@ -51,7 +54,7 @@ body {
     height: 200px;
     width: 270px;
     border-radius: 16px;
-    border-color: white;
+    border: 1px solid white;
     background-color: rgb(20, 20, 20);
 }
 
@@ -59,7 +62,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
     margin-top: 10px;
 }
@@ -68,15 +71,16 @@ body {
     height: 200px;
     width: 500px;
     border-radius: 16px;
-    border-color: white;
+    border: 1px solid white;
     background-color: rgb(20, 20, 20);    
+    padding: 5px;
 }
 
 .memoria {
     height: 200px;
     width: 500px;
     border-radius: 16px;
-    border-color: white;
+    border: 1px solid white;
     background-color: rgb(20, 20, 20);    
 }
 
@@ -90,4 +94,124 @@ body {
     color: white;
     margin-left: 10px;
     margin-top: 5px;
+}
+
+.editor-texto {
+    width: 100%;
+    height: 270px;
+    background-color: #121212;
+    color: #00ffcc;
+    border: 1px solid #444;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 8px;
+    font-family: monospace;
+    resize: none;
+}
+
+.btn-montar {
+    margin-top: 6px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.reg-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+    padding: 8px;
+}
+
+.reg-box {
+    background-color: #121212;
+    border: 1px solid #444;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 13px;
+}
+
+.btn-montar:hover {
+    background-color: #0077b6;
+    border-color: #0077b6;
+    transform: scale(1.05);
+}
+
+.grupo-botoes .btn-transparente {
+    background-color: transparent !important;
+    color: white !important; 
+    border: 2px solid #00b4d8 !important;
+}
+
+.grupo-botoes .btn-transparente:hover {
+    background-color: rgba(0, 180, 216, 0.2) !important;
+    color: white !important;
+    border-color: #38bdf8 !important;
+}
+
+.registradores {
+    height: auto; 
+    min-height: 220px;
+    width: 650px; 
+    border-radius: 16px;
+    border: 1px solid white;
+    background-color: rgb(20, 20, 20);    
+    padding: 8px;
+}
+
+.reg-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 6px; 
+    padding: 8px;
+}
+
+.reg-box {
+    background-color: transparent; 
+    border: 1px solid rgba(255, 255, 255, 0.4); 
+    color: white;
+    padding: 6px 4px;
+    text-align: center;
+    border-radius: 6px;
+    font-family: monospace;
+    font-size: 11px; 
+}
+
+.codigo-scroll {
+    background-color: #121212;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    height: 240px;
+    margin: 8px;
+    padding: 8px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.code-line {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.code-line .addr {
+    color: #94a3b8; 
+}
+
+
+.code-line .hex {
+    color: #38bdf8; 
+}
+
+
+.code-line .asm {
+    color: #e2e8f0;
 }

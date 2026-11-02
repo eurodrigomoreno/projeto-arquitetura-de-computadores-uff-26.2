@@ -14,13 +14,27 @@
     <main>
         <section class="areas">
             <section class="vertical">
-                <div class="montador">
-                    <h4 class="subtitle">Montador MIC-1</h4>
-                </div>
+<div class="montador">
+    <h4 class="subtitle">Montador MIC-1</h4>
+    <textarea class="editor-texto" placeholder="Escreva seu assembly aqui..."></textarea>
+    <div class="grupo-botoes">
+        <button class="btn-montar">Montar</button>
+        <button class="btn-montar btn-transparente">Passo(fase)</button>
+        <button class="btn-montar btn-transparente">Instrução</button>
+    </div>
+    <div class="grupo-botoes" style="margin-top: 4px;">
+        <button class="btn-montar btn-transparente">&#9658; Auto</button>
+        <button class="btn-montar btn-transparente">Reiniciar</button>
+    </div>
+</div>
 
-                <div class="codigo">
+        <div class="codigo">
                     <h4 class="subtitle">Codigo de Maquina</h4>
-                </div>
+                <div id="machine-code-output" class="codigo-scroll">
+                    <div class="code-line"><span class="addr">0000</span> <span class="hex">00500293</span> <span class="asm">addi x5, x0, 5</span></div>
+                    <div class="code-line"><span class="addr">0004</span> <span class="hex">00000313</span> <span class="asm">addi x6, x0, 0</span></div>
+            </div>
+        </div>
 
                 <div class="estatiscas">
                     <h4 class="subtitle">Estatísticas</h4>
@@ -29,9 +43,43 @@
 
             <section class="horizontal">
                 <div class="registradores">
-                    <h4 class="subtitle">Registradores</h4>
-                </div>
-
+    <h4 class="subtitle">Registradores</h4>
+    
+    <div class="reg-grid">
+        <div class="reg-box">x0=0</div>
+        <div class="reg-box">x1=0</div>
+        <div class="reg-box">x2=16368</div>
+        <div class="reg-box">x3=0</div>
+        <div class="reg-box">x4=0</div>
+        <div class="reg-box">x5=0</div>
+        <div class="reg-box">x6=0</div>
+        <div class="reg-box">x7=0</div>
+        <div class="reg-box">x8=0</div>
+        <div class="reg-box">x9=0</div>
+        <div class="reg-box">x10=0</div>
+        <div class="reg-box">x11=0</div>
+        <div class="reg-box">x12=0</div>
+        <div class="reg-box">x13=0</div>
+        <div class="reg-box">x14=0</div>
+        <div class="reg-box">x15=0</div>
+        <div class="reg-box">x16=0</div>
+        <div class="reg-box">x17=0</div>
+        <div class="reg-box">x18=0</div>
+        <div class="reg-box">x19=0</div>
+        <div class="reg-box">x20=0</div>
+        <div class="reg-box">x21=0</div>
+        <div class="reg-box">x22=0</div>
+        <div class="reg-box">x23=0</div>
+        <div class="reg-box">x24=0</div>
+        <div class="reg-box">x25=0</div>
+        <div class="reg-box">x26=0</div>
+        <div class="reg-box">x27=0</div>
+        <div class="reg-box">x28=0</div>
+        <div class="reg-box">x29=0</div>
+        <div class="reg-box">x30=0</div>
+        <div class="reg-box">x31=0</div>
+    </div>
+</div>
                 <div class="memoria">
                     <h4 class="subtitle">Memoria</h4>
                 </div>
